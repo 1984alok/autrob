@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="android:textColorPrimary">@color/primary_text_color_selector</item>
+        <item name="android:textColorSecondary">@color/secondary_text_color_selector</item>
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_action_dot</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="Theme.Autrob" parent="AppTheme.NoActionBar">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_autrob</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Autrob</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Autrob</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Autrob</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Autrob</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Autrob</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_autrob</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_autrob</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Autrob</item>
+
+
+    </style>
+
+    <style name="ActionBar.Solid.Autrob" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_background_textured_autrob</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_autrob</item>
+        <item name="android:backgroundSplit">@drawable/ab_background_textured_autrob</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Autrob</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Autrob" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_autrob</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Autrob</item>
+    </style>
+
+    <style name="PopupMenu.Autrob" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_autrob</item>
+    </style>
+
+    <style name="DropDownListView.Autrob" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_autrob</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Autrob" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_autrob</item>
+    </style>
+
+    <style name="DropDownNav.Autrob" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_autrob</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_autrob</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_autrob</item>
+    </style>
+
+    <style name="ProgressBar.Autrob" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_autrob</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Autrob" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_autrob</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Autrob.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Autrob</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Autrob</item>
+    </style>
+
+</resources>
